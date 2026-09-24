@@ -2,9 +2,9 @@ import type { FeedbackChoice, PositionId } from '@/lib/types';
 
 export const COACH = {
   name: 'Coach Ranvir',
-  role: 'Head of Youth Coaching',
+  role: 'Youth coach · Drill reviewer',
   initials: 'CR',
-  bio: 'UEFA-licensed youth coach. Reviews every drill, plan and note on Pitchside before it reaches you.',
+  bio: 'Reviews every drill, plan and note on Pitchside before it reaches a player.',
 };
 
 export interface CoachNote {

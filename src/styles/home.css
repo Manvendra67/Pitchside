@@ -2006,13 +2006,32 @@
   font-size: var(--fs-xs) !important;
   color: var(--volt-300) !important;
 }
-.coach-card blockquote {
-  margin: 0;
+.coach-card__lead {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2.2rem);
+  font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2.2rem) !important;
   line-height: 1.15;
   letter-spacing: -0.01em;
+  color: var(--chalk-50) !important;
+}
+.coach-card__checks {
+  display: grid;
+  gap: 8px;
+}
+.coach-card__checks li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+.coach-card__checks li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--volt-400);
+  transform: rotate(45deg);
+  flex-shrink: 0;
 }
 .coach-card p {
   color: rgba(244, 243, 234, 0.7);

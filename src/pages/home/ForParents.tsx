@@ -66,7 +66,12 @@ export function ForParents() {
                 <HeartHandshake size={18} /> Reviewer
               </span>
             </div>
-            <blockquote>“I want every player to leave a session a little better — and a lot happier.”</blockquote>
+            <p className="coach-card__lead">Every drill is checked for three things before it ships:</p>
+            <ul className="coach-card__checks">
+              <li>Safe and suitable for ages 8–13</li>
+              <li>Clear, simple steps a player can follow alone</li>
+              <li>Pitched at the right level</li>
+            </ul>
             <p>{COACH.bio}</p>
           </article>
           <div className="parents__safety" data-reveal="up">
