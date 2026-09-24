@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router';
+import { BrowserRouter, HashRouter } from 'react-router';
 import '@fontsource-variable/archivo/wdth.css';
 import '@fontsource-variable/geist/wght.css';
 import '@fontsource-variable/geist-mono/wght.css';
@@ -17,10 +17,13 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.documentElement.classList.add('reduced-motion');
 }
 
+// Static single-file hosts can't rewrite paths, so they get hash routing.
+const Router = import.meta.env.VITE_HASH_ROUTER ? HashRouter : BrowserRouter;
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <Router>
       <App />
-    </BrowserRouter>
+    </Router>
   </StrictMode>,
 );
