@@ -1,0 +1,188 @@
+/* ─────────────────────────────────────────────────────────────
+   Pitchside design tokens
+   Deep club greens, warm chalk neutrals, one signal accent (volt)
+   and one warm accent (flare). Everything else is derived.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  /* Club greens */
+  --pitch-975: #030b07;
+  --pitch-950: #05120c;
+  --pitch-900: #081b12;
+  --pitch-850: #0b2419;
+  --pitch-800: #0e2d1f;
+  --pitch-700: #133a28;
+  --pitch-600: #1a4d35;
+  --pitch-500: #226645;
+  --pitch-400: #2f8559;
+  --pitch-300: #5aa87d;
+  --pitch-200: #9ccdb0;
+  --pitch-100: #d6ebdf;
+
+  /* Chalk neutrals */
+  --chalk-0: #ffffff;
+  --chalk-50: #fbfaf6;
+  --chalk-100: #f5f3ec;
+  --chalk-150: #efece3;
+  --chalk-200: #e7e3d8;
+  --chalk-300: #d8d3c5;
+  --chalk-400: #b9b3a3;
+
+  /* Ink */
+  --ink-950: #07100c;
+  --ink-900: #0b1510;
+  --ink-800: #1a2620;
+  --ink-700: #2b3832;
+  --ink-600: #45524b;
+  --ink-500: #5d6a63;
+  --ink-400: #7c877f;
+
+  /* Accents */
+  --volt-300: #ecfb9c;
+  --volt-400: #dcf55c;
+  --volt-500: #c9e83a;
+  --volt-600: #a6c41e;
+  --volt-700: #6d8410;
+  --flare-300: #ffb592;
+  --flare-400: #ff8d5c;
+  --flare-500: #ff6a33;
+  --flare-600: #e0501c;
+  --sky-400: #6fc5ee;
+  --sky-500: #3aa8dd;
+
+  /* Fuel colours */
+  --fuel-carbs: #f1b52e;
+  --fuel-protein: #ff7a5c;
+  --fuel-fat: #3fbfae;
+
+  /* Category colours */
+  --cat-control: #2f8559;
+  --cat-passing: #3aa8dd;
+  --cat-finishing: #ff6a33;
+  --cat-speed: #c9a50a;
+  --cat-defending: #6b6fd6;
+  --cat-keeping: #d4589a;
+
+  /* Semantic — light (product default) */
+  --bg: var(--chalk-100);
+  --bg-elevated: var(--chalk-50);
+  --surface: var(--chalk-0);
+  --surface-2: var(--chalk-50);
+  --surface-3: var(--chalk-150);
+  --surface-sunken: var(--chalk-150);
+  --text: var(--ink-900);
+  --text-2: var(--ink-600);
+  --text-3: var(--ink-500);
+  --border: rgba(11, 21, 16, 0.08);
+  --border-strong: rgba(11, 21, 16, 0.14);
+  --focus: var(--pitch-400);
+  --primary: var(--pitch-800);
+  --primary-hover: var(--pitch-700);
+  --on-primary: var(--chalk-50);
+  --accent: var(--volt-400);
+  --on-accent: var(--ink-950);
+  --success: var(--pitch-400);
+  --line: rgba(11, 21, 16, 0.06);
+
+  /* Type */
+  --font-display: 'Archivo Variable', 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Geist Variable', 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Instrument Serif', ui-serif, Georgia, serif;
+  --font-mono: 'Geist Mono Variable', 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --fs-hero: clamp(2.9rem, 1.2rem + 6.6vw, 8.4rem);
+  --fs-display: clamp(2.4rem, 1.3rem + 4.4vw, 5.6rem);
+  --fs-h1: clamp(2rem, 1.35rem + 2.4vw, 3.5rem);
+  --fs-h2: clamp(1.6rem, 1.2rem + 1.4vw, 2.4rem);
+  --fs-h3: clamp(1.25rem, 1.1rem + 0.5vw, 1.55rem);
+  --fs-lg: 1.1875rem;
+  --fs-md: 1.0625rem;
+  --fs-sm: 0.9375rem;
+  --fs-xs: 0.8125rem;
+  --fs-2xs: 0.72rem;
+
+  /* Space (4px base) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+  --s-20: 80px;
+  --s-24: 96px;
+  --s-32: 128px;
+  --section: clamp(88px, 12vw, 176px);
+  --gutter: clamp(16px, 4vw, 56px);
+  --max: 1320px;
+
+  /* Radii */
+  --r-xs: 8px;
+  --r-sm: 12px;
+  --r-md: 16px;
+  --r-lg: 22px;
+  --r-xl: 30px;
+  --r-2xl: 40px;
+  --r-pill: 999px;
+
+  /* Depth */
+  --shadow-xs: 0 1px 1px rgba(7, 16, 12, 0.04), 0 1px 2px rgba(7, 16, 12, 0.05);
+  --shadow-sm: 0 1px 2px rgba(7, 16, 12, 0.05), 0 4px 12px -4px rgba(7, 16, 12, 0.08);
+  --shadow-md: 0 1px 2px rgba(7, 16, 12, 0.05), 0 12px 32px -12px rgba(7, 16, 12, 0.16);
+  --shadow-lg: 0 2px 4px rgba(7, 16, 12, 0.05), 0 28px 56px -20px rgba(7, 16, 12, 0.26);
+  --shadow-xl: 0 2px 6px rgba(7, 16, 12, 0.06), 0 48px 96px -32px rgba(7, 16, 12, 0.38);
+  --inset-hi: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-overshoot: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --t-micro: 160ms;
+  --t-hover: 220ms;
+  --t-panel: 340ms;
+  --t-enter: 460ms;
+  --t-section: 640ms;
+
+  /* Layout */
+  --sidebar-w: 256px;
+  --rail-w: 76px;
+  --tabbar-h: 72px;
+  --topbar-h: 72px;
+
+  /* Layers */
+  --z-bg: 0;
+  --z-content: 1;
+  --z-nav: 40;
+  --z-overlay: 80;
+  --z-toast: 90;
+  --z-portal: 100;
+  --z-cursor: 120;
+
+  color-scheme: light;
+}
+
+/* Dark scope — marketing sections, hero cards, onboarding */
+.theme-dark {
+  --bg: var(--pitch-950);
+  --bg-elevated: var(--pitch-900);
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-2: rgba(255, 255, 255, 0.06);
+  --surface-3: rgba(255, 255, 255, 0.09);
+  --surface-sunken: rgba(0, 0, 0, 0.22);
+  --text: #f4f3ea;
+  --text-2: rgba(244, 243, 234, 0.74);
+  --text-3: rgba(244, 243, 234, 0.6);
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --focus: var(--volt-400);
+  --primary: var(--volt-400);
+  --primary-hover: var(--volt-300);
+  --on-primary: var(--ink-950);
+  --line: rgba(255, 255, 255, 0.06);
+  --inset-hi: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  color-scheme: dark;
+  color: var(--text);
+}
